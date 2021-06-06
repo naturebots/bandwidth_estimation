@@ -12,7 +12,6 @@ def calc_bandwidth():
     # print('RTT is ' + str(rtt) + ' ms')
     estimated_bandwidth = math.floor(1500 * 8 / rtt * 1000)
     return estimated_bandwidth
-    # return estimate_size
 
 
 def get_rtt():

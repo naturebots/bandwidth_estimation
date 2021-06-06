@@ -3,7 +3,7 @@ import icmp_cal
 
 class Estimator(object):
     def __init__(self):
-        self.file_name = './estimated_bandwidth.log)'
+        self.file_name = './estimated_bandwidth.log'
 
     def report_states(self, stats: dict):
         '''

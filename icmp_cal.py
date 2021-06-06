@@ -1,21 +1,16 @@
-# from ping3 import ping, verbose_ping
-# import pings
-import sys, subprocess, re
+import subprocess
+import re
 import math
-# import numpy as np
-# import numpay
 
 DEST_IP = '172.17.0.3'
 # DEST_IP = '127.0.0.1'
 # DEST_IP = 'google.co.jp'
-RTT_ARRY = []
-RTT_DIFF = []
 
 
 def calc_bandwidth():
     rtt = get_rtt()
     # print('RTT is ' + str(rtt) + ' ms')
-    estimated_bandwidth = math.floor(24000 / rtt * 1000)
+    estimated_bandwidth = math.floor(1500 * 8 / rtt * 1000)
     return estimated_bandwidth
     # return estimate_size
 

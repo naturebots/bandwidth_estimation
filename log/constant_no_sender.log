@@ -1,0 +1,54 @@
+(rtp_rtcp_impl.cc:312): Failed to send RTCP BYE
+(bitrate_allocator.cc:523): UpdateAllocationLimits : total_requested_min_bitrate: 0 bps, total_requested_padding_bitrate: 0 bps, total_requested_max_bitrate: 0 bps
+(video_send_stream.cc:177): VideoSendStream::Stop
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(video_stream_encoder.cc:1698): Video suspend state changed to: suspended
+(video_send_stream_impl.cc:386): VideoSendStream::Stop
+(video_send_stream_impl.cc:311): ~VideoSendStreamInternal: {encoder_settings: { experiment_cpu_load_estimator: off}}, rtp: {ssrcs: [2697917222], rids: [], mid: '1', rtcp_mode: RtcpMode::kReducedSize, max_packet_size: 1200, extmap-allow-mixed: false, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}], lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec: {ulpfec_payload_type: 124, red_payload_type: 125, red_rtx_payload_type: 122}, payload_name: VP8, payload_type: 96, raw_payload: false, flexfec: {payload_type: -1, ssrc: 0, protected_media_ssrcs: []}, rtx: {ssrcs: [1991936455], payload_type: 97}, c_name: DtB3/JwQ8uaZ+LzH}, rtcp_report_interval_ms: 1000, send_transport: (Transport), render_delay_ms: 0, target_delay_ms: 0, suspend_below_min_bitrate: off}
+(send_statistics_proxy.cc:667): WebRTC.Video.InputFramesPerSecond periodic_samples:9, {min:10, avg:10, max:11}
+WebRTC.Video.SentFramesPerSecond periodic_samples:9, {min:6, avg:10, max:10}
+WebRTC.Video.SentToInputFpsRatioPercent 100
+WebRTC.Video.SentPacketsLostInPercent 0
+WebRTC.Video.NumberOfPauseEvents 0
+WebRTC.Video.PausedTimeInPercent 0
+WebRTC.Video.BitrateSentInBps periodic_samples:9, {min:330376, avg:574856, max:628728}
+WebRTC.Video.MediaBitrateSentInBps periodic_samples:9, {min:322120, avg:561344, max:613944}
+WebRTC.Video.PaddingBitrateSentInBps periodic_samples:9, {min:0, avg:0, max:0}
+WebRTC.Video.RetransmittedBitrateSentInBps periodic_samples:9, {min:0, avg:0, max:0}
+WebRTC.Video.FecBitrateSentInBps periodic_samples:9, {min:0, avg:0, max:0}
+Frames encoded 185
+WebRTC.Video.DroppedFrames.Capturer 0
+WebRTC.Video.DroppedFrames.EncoderQueue 0
+WebRTC.Video.DroppedFrames.Encoder 9
+WebRTC.Video.DroppedFrames.Ratelimiter 0
+WebRTC.Video.DroppedFrames.CongestionWindow 0
+(video_receive_stream2.cc:270): ~VideoReceiveStream2: {decoders: [{payload_type: 96, payload_name: VP8, codec_params: {}}, {payload_type: 98, payload_name: VP9, codec_params: {profile-id: 0}}, {payload_type: 100, payload_name: VP9, codec_params: {profile-id: 2}}, {payload_type: 127, payload_name: AV1X, codec_params: {}}], rtp: {remote_ssrc: 36259994, local_ssrc: 2697917222, rtcp_mode: RtcpMode::kReducedSize, rtcp_xr: {receiver_reference_time_report: off}, transport_cc: on, lntf: {enabled: false}, nack: {rtp_history_ms: 1000}, ulpfec_payload_type: 124, red_type: 125, rtx_ssrc: 18519593, rtx_payload_types: {97 (pt) -> 96 (apt), 99 (pt) -> 98 (apt), 101 (pt) -> 100 (apt), 122 (pt) -> 125 (apt), 123 (pt) -> 127 (apt), }, raw_payload_types: {}, extensions: [{uri: http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07, id: 8}, {uri: http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01, id: 3}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time, id: 2}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/color-space, id: 9}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/playout-delay, id: 12}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-content-type, id: 11}, {uri: http://www.webrtc.org/experiments/rtp-hdrext/video-timing, id: 7}, {uri: urn:3gpp:video-orientation, id: 13}, {uri: urn:ietf:params:rtp-hdrext:sdes:mid, id: 4}, {uri: urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id, id: 6}, {uri: urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id, id: 5}, {uri: urn:ietf:params:rtp-hdrext:toffset, id: 14}]}, renderer: (renderer), render_delay_ms: 10, sync_group: stream_id, target_delay_ms: 0}
+(receive_statistics_proxy2.cc:495): Frames decoded 0
+WebRTC.Video.DroppedFrames.Receiver 0
+
+(video_render_frames.cc:47): WebRTC.Video.DroppedFrames.RenderQueue 0
+(channel.cc:159): Destroyed channel: 1
+(channel.cc:517): Channel disabled
+(channel.cc:816): Changing voice state, recv=0 send=0
+(webrtc_voice_engine.cc:1833): RemoveSendStream: 636037512
+(audio_send_stream.cc:176): ~AudioSendStream: 636037512
+(webrtc_voice_engine.cc:1905): RemoveRecvStream: 3297563282
+(call.cc:1056): UpdateAggregateNetworkState: aggregate_state change to down
+(audio_receive_stream.cc:144): ~AudioReceiveStream: 3297563282
+(pacing_controller.cc:155): PacedSender paused.
+(control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+(channel.cc:159): Destroyed channel: 0
+(peer_connection.cc:1077): Session: 8422364170462327179 is destroyed.
+(openssl_stream_adapter.cc:912): Cleanup
+(call.cc:552): WebRTC.Call.EstimatedSendBitrateInKbps, periodic_samples:9, {min:650, avg:650, max:650}
+(call.cc:560): WebRTC.Call.PacerBitrateInKbps, periodic_samples:9, {min:650, avg:650, max:650}
+(call.cc:590): WebRTC.Call.AudioBitrateReceivedInBps, periodic_samples:9, {min:41288, avg:41920, max:42720}
+(call.cc:598): WebRTC.Call.RtcpBitrateReceivedInBps, periodic_samples:9, {min:2800, avg:4512, max:5792}
+(call.cc:606): WebRTC.Call.BitrateReceivedInBps, periodic_samples:9, {min:44240, avg:46432, max:47792}
+(paced_sender.cc:176): ProcessThreadAttached 0x0
+(paced_sender.cc:176): ProcessThreadAttached 0x0
+(send_delay_stats.cc:49): WebRTC.Video.SendDelayInMs, periodic_samples:9, {min:0, avg:1, max:1}
+(dtmf_sender.cc:225): The Dtmf provider is deleted. Clear the sending queue.
+(webrtc_video_engine.cc:576): WebRtcVideoEngine::~WebRtcVideoEngine
+(webrtc_voice_engine.cc:214): WebRtcVoiceEngine::~WebRtcVoiceEngine
+

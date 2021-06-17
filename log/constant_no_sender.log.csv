@@ -1,0 +1,20 @@
+WebRTC.Video.SentToInputFpsRatioPercent, 100
+WebRTC.Video.SentPacketsLostInPercent, 0
+WebRTC.Video.NumberOfPauseEvents, 0
+WebRTC.Video.PausedTimeInPercent, 0
+Frames encoded, 185
+WebRTC.Video.DroppedFrames.Capturer, 0
+WebRTC.Video.DroppedFrames.EncoderQueue, 0
+WebRTC.Video.DroppedFrames.Encoder, 9
+WebRTC.Video.DroppedFrames.Ratelimiter, 0
+WebRTC.Video.DroppedFrames.CongestionWindow, 0
+Frames decoded, 0
+WebRTC.Video.DroppedFrames.Receiver, 0
+WebRTC.Video.DroppedFrames.RenderQueue, 0
+WebRTC.Video.InputFramesPerSecond, {min:10, avg:10, max:11}
+WebRTC.Video.SentFramesPerSecond, {min:6, avg:10, max:10}
+WebRTC.Video.BitrateSentInBps, {min:330376, avg:574856, max:628728}
+WebRTC.Video.MediaBitrateSentInBps, {min:322120, avg:561344, max:613944}
+WebRTC.Video.PaddingBitrateSentInBps, {min:0, avg:0, max:0}
+WebRTC.Video.RetransmittedBitrateSentInBps, {min:0, avg:0, max:0}
+WebRTC.Video.FecBitrateSentInBps, {min:0, avg:0, max:0}
